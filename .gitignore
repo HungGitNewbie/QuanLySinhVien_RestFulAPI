@@ -1,0 +1,16 @@
+# Bỏ qua thư mục node_modules
+node_modules/
+
+# Bỏ qua các file cấu hình môi trường
+.env
+
+# Bỏ qua các file log
+*.log
+
+# Bỏ qua thư mục cache của npm và yarn
+.npm/
+.yarn/
+
+# Bỏ qua các file hệ điều hành
+.DS_Store
+Thumbs.db
