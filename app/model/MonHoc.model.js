@@ -10,7 +10,10 @@ MonHoc.getByMaMonHoc = (mamon, callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(result);
+        if (!result){
+            return callback(null, result = null);
+        }
+        callback(null, result);
     });
 };
 
@@ -21,7 +24,7 @@ MonHoc.getAllMonHoc = (callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(result);
+        callback(null, result);
     });
 };
 
@@ -32,7 +35,7 @@ MonHoc.addMonHoc = (monhoc, callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(result);
+        callback(null, result);
     });
 };
 
@@ -43,7 +46,7 @@ MonHoc.updateMonHoc = (mamon, monhoc, callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(result);
+        callback(null, result);
     });
 };
 
@@ -54,7 +57,7 @@ MonHoc.deleteMonHoc = (mamon, callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(result);
+        callback(null, result);
     });
 };
 

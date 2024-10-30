@@ -49,7 +49,7 @@ SinhVien.addSinhVien = (sinhvien, callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(null, result.insertId);
+        callback(null, result);
     });
 };
 
@@ -61,7 +61,7 @@ SinhVien.updateSinhVien = (msv, sinhvien, callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(null, result.affectedRows);
+        callback(null, result);
     });
 };
 
@@ -73,7 +73,7 @@ SinhVien.deleteSinhVien = (id, callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(null, result.affectedRows);
+        callback(null, result);
     });
 };
 

@@ -9,7 +9,7 @@ DiemThi.getAllDiemThi = (callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(result);
+        callback(null, result);
     });
 };
 
@@ -20,7 +20,7 @@ DiemThi.getByMaMonHoc = (mamon, callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(err, result);
+        callback(null, result);
     });
 };
 
@@ -31,7 +31,7 @@ DiemThi.getByMaSinhVienAndMaMonHoc = (masinhvien, mamon, callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(result);
+        callback(null, result);
     });
 };
 
@@ -56,7 +56,7 @@ DiemThi.addDiemThi = (diemthi, callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(err, result);
+        callback(null, result);
     });
 };
 
@@ -78,7 +78,7 @@ DiemThi.updateDiemThi = (diemthi, callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(result);
+        callback(null, result);
     });
 };
 
@@ -89,7 +89,7 @@ DiemThi.deleteDiemThi = (diemthi, callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(result);
+        callback(null, result);
     });
 };
 

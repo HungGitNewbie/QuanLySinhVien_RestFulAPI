@@ -11,7 +11,7 @@ LopSinhHoat.getAllLopSinhHoat = (callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(result);
+        callback(null, result);
     });
 };
 
@@ -24,7 +24,7 @@ LopSinhHoat.addLopSinhHoat = (lopsinhhoat, callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(null, result.insertId);
+        callback(null, result);
     });
 };
 
@@ -36,7 +36,7 @@ LopSinhHoat.updateLopSinhHoat = (malop, lopsinhhoat, callback) => {
             console.error(err);
             return callback(err);
         }
-        callback(null, result.affectedRows);
+        callback(null, result);
     });
 };
 
